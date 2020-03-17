@@ -1,0 +1,3 @@
+mongodb+srv://JackDaedalus:<password>@dsbdatavizcommcluster-aq99i.mongodb.net/test?retryWrites=true&w=majority
+
+Replace <password> with the password for the user, JackDaedalus, and ensure all special characters are URL encoded.
