@@ -1,0 +1,6 @@
+mongodb+srv://<username>:<password>@dsbdatavizcommcluster-aq99i.mongodb.net/test
+
+mongodb+srv://JackDaedalus:Arizona_1@dsbdatavizcommcluster-aq99i.mongodb.net/test
+
+
+JackDaedalus:Arizona_1
