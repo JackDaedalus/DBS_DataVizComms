@@ -4,3 +4,7 @@ Replace <password> with the password for the user, JackDaedalus, and ensure all 
 
 
 https://docs.mongodb.com/manual/tutorial/query-documents/
+
+https://docs.mongodb.com/manual/tutorial/project-fields-from-query-results/
+https://docs.mongodb.com/manual/tutorial/query-documents/
+http://docs.mongodb.com/compass/master/query/project/
