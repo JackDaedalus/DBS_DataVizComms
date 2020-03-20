@@ -1,0 +1,336 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20193.19.1110.1722                               -->
+<workbook original-version='18.1' source-build='2019.3.2 (20193.19.1110.1722)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Resolved Incidents (flight Incident dataset)' inline='true' name='federated.16fn3kq1q69jv7178zo2w0qzvr0r' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='flight Incident dataset' name='excel-direct.1v3mf590nwlmdt19gn3ol1lx6kjm'>
+            <connection class='excel-direct' cleaning='yes' compat='no' dataRefreshTime='' filename='C:/Admin/DBS/DataVizComms/Repo/Tableau/Data/flight Incident dataset.xlsx' interpretationMode='1' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='date' date-parse-format='MM/dd/yyyy' name='Pivot Field Names' />
+            <column datatype='integer' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[01/01/2015]' />
+            <value name='[01/02/2015]' />
+            <value name='[01/03/2015]' />
+            <value name='[01/04/2015]' />
+            <value name='[01/05/2015]' />
+            <value name='[01/06/2015]' />
+            <value name='[01/07/2015]' />
+            <value name='[01/08/2015]' />
+            <value name='[01/09/2015]' />
+            <value name='[01/10/2015]' />
+            <value name='[01/11/2015]' />
+            <value name='[01/12/2015]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[Resolved Incidents].[01/01/2015]' />
+              <field name='[Resolved Incidents].[01/02/2015]' />
+              <field name='[Resolved Incidents].[01/03/2015]' />
+              <field name='[Resolved Incidents].[01/04/2015]' />
+              <field name='[Resolved Incidents].[01/05/2015]' />
+              <field name='[Resolved Incidents].[01/06/2015]' />
+              <field name='[Resolved Incidents].[01/07/2015]' />
+              <field name='[Resolved Incidents].[01/08/2015]' />
+              <field name='[Resolved Incidents].[01/09/2015]' />
+              <field name='[Resolved Incidents].[01/10/2015]' />
+              <field name='[Resolved Incidents].[01/11/2015]' />
+              <field name='[Resolved Incidents].[01/12/2015]' />
+            </group>
+          </groups>
+          <relation connection='excel-direct.1v3mf590nwlmdt19gn3ol1lx6kjm' name='Resolved Incidents' table='[&apos;Resolved Incidents$&apos;]' type='table'>
+            <columns gridOrigin='B1:N35:no:B1:N35:1' header='no' lost='0' outcome='1' processed='321'>
+              <column datatype='string' name='Employee' ordinal='0' />
+              <column datatype='integer' name='01/01/2015' ordinal='1' />
+              <column datatype='integer' name='01/02/2015' ordinal='2' />
+              <column datatype='integer' name='01/03/2015' ordinal='3' />
+              <column datatype='integer' name='01/04/2015' ordinal='4' />
+              <column datatype='integer' name='01/05/2015' ordinal='5' />
+              <column datatype='integer' name='01/06/2015' ordinal='6' />
+              <column datatype='integer' name='01/07/2015' ordinal='7' />
+              <column datatype='integer' name='01/08/2015' ordinal='8' />
+              <column datatype='integer' name='01/09/2015' ordinal='9' />
+              <column datatype='integer' name='01/10/2015' ordinal='10' />
+              <column datatype='integer' name='01/11/2015' ordinal='11' />
+              <column datatype='integer' name='01/12/2015' ordinal='12' />
+            </columns>
+          </relation>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Resolved Incidents]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>2</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;B1:N35:no:B1:N35:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>321</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Employee</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Employee]</local-name>
+            <parent-name>[Resolved Incidents]</parent-name>
+            <remote-alias>Employee</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Names</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Pivot Field Names]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Names</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Values</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pivot Field Values]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Values</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Location' datatype='string' name='[Employee - Split 1]' role='dimension' type='nominal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.16fn3kq1q69jv7178zo2w0qzvr0r].[Employee]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [Employee], &quot;-&quot;, 1 ) )' />
+      </column>
+      <column aggregation='Sum' caption='EmployeeID' datatype='integer' name='[Employee - Split 2]' role='dimension' type='ordinal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.16fn3kq1q69jv7178zo2w0qzvr0r].[Employee]'>
+        <calculation class='tableau' formula='INT( SPLIT( [Employee], &quot;-&quot;, 2 ) )' />
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Date' datatype='date' name='[Pivot Field Names]' role='dimension' type='ordinal' />
+      <column caption='Resolved Incidents' datatype='integer' name='[Pivot Field Values]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.481481' measure-ordering='alphabetic' measure-percentage='0.518519' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Resolved Incidents (flight Incident dataset)' name='federated.16fn3kq1q69jv7178zo2w0qzvr0r' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16fn3kq1q69jv7178zo2w0qzvr0r'>
+            <column aggregation='Sum' caption='EmployeeID' datatype='integer' name='[Employee - Split 2]' role='dimension' type='ordinal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.16fn3kq1q69jv7178zo2w0qzvr0r].[Employee]'>
+              <calculation class='tableau' formula='INT( SPLIT( [Employee], &quot;-&quot;, 2 ) )' />
+            </column>
+            <column datatype='string' name='[Employee]' role='dimension' type='nominal' />
+            <column caption='Resolved Incidents' datatype='integer' name='[Pivot Field Values]' role='measure' type='quantitative' />
+            <column-instance column='[Employee - Split 2]' derivation='None' name='[none:Employee - Split 2:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Pivot Field Values]' derivation='Sum' name='[sum:Pivot Field Values:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.16fn3kq1q69jv7178zo2w0qzvr0r].[none:Employee - Split 2:ok]</rows>
+        <cols>[federated.16fn3kq1q69jv7178zo2w0qzvr0r].[sum:Pivot Field Values:qk]</cols>
+      </table>
+      <simple-id uuid='{2F60C4FC-35DD-474D-A59A-2656F0D95CEF}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.16fn3kq1q69jv7178zo2w0qzvr0r].[none:Employee - Split 2:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2A2570D8-2C26-4906-9F6E-EFCDD5502158}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
